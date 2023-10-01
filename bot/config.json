@@ -1,0 +1,11 @@
+{
+
+    "admin_id": "900631686", 
+    "bot_token": "6345483068:AAGRuIuHCcoPxfYOXD-HgN6KEi0uQKbn4bg", 
+    "manager_name": "@kseeilax",
+    "manager_id": "1033490613",
+    "redis_dsn": "redis://localhost",
+    "redis_fsm_db_id": "0", 
+    "redis_data_db_id": "0", 
+    "fsm_mode": "redis"
+}
