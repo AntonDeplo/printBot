@@ -1,3 +1,4 @@
+# Отдельный сборочный образ, чтобы уменьшить финальный размер образа
 FROM python:3.9-slim-bullseye as compile-image
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
@@ -11,4 +12,4 @@ COPY --from=compile-image /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 WORKDIR /app
 COPY bot /app/bot
-CMD ["python", "run_bot.py"]    
+CMD ["python", "-m", "bot"]
